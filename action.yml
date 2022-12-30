@@ -1,0 +1,22 @@
+name: "Run black formatter"
+description: "Run the black formatter on your codebase to improve code review experience."
+inputs:
+  options:
+    description:
+      "Options passed to Black. Use `black --help` to see available options. Default:
+      '--check --diff'"
+    required: false
+    default: "" # --check --diff
+  src:
+    description: "Source to run Black. Default: '.'"
+    required: false
+    default: "."
+branding:
+  color: "blue"
+  icon: "check-circle"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.src }}
+    - ${{ inputs.options }}
