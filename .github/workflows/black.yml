@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         
-      - uses: sudonorm/format-with-black@v1.1
+      - uses: sudonorm/format-with-black@v1.2
         with:
           src: "."
 
