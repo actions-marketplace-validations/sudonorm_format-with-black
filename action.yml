@@ -1,4 +1,4 @@
-name: "Run black formatter"
+name: "Execute black formatter"
 description: "Run the black formatter on your codebase to improve code review experience."
 inputs:
   options:
