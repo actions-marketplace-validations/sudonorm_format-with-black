@@ -1,2 +1,2 @@
 # format-with-black
-Automating using Black
+Automating the formatting of Python code using Black
